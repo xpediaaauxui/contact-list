@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libro de contactos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Libro de contactos</h1>
+  </header>
+
+  <main>
+
+    <!-- Buscador y filtro -->
+    <section class="panel busqueda">
+      <input type="text" id="buscador" placeholder="Buscar por nombre...">
+
+      <label>Filtrar por
+        <select id="filtro-categoria">
+          <option value="todas">Todas</option>
+          <option value="favoritos">Favoritos</option>
+        </select>
+      </label>
+    </section>
+
+    <!-- Formulario para agregar o editar -->
+    <section class="panel">
+      <h2 id="titulo-form">Agregar contacto</h2>
+
+      <form id="form-contacto">
+        <input type="hidden" id="contacto-id">
+
+        <label>Nombre *
+          <input type="text" id="nombre">
+        </label>
+
+        <label>Teléfono *
+          <input type="text" id="telefono">
+        </label>
+
+        <label>Email
+          <input type="email" id="email">
+        </label>
+
+        <label>Categoría
+          <select id="categoria"></select>
+        </label>
+
+        <p id="mensaje-error"></p>
+
+        <div class="botones-form">
+          <button type="submit" id="boton-guardar">Guardar</button>
+          <button type="button" id="boton-cancelar" class="boton-secundario">Cancelar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Lista de contactos -->
+    <section>
+      <p id="contador"></p>
+      <p id="sin-resultados" class="oculto">No se encontraron contactos.</p>
+      <div id="lista-contactos"></div>
+    </section>
+
+  </main>
+  <footer class="pie">
+    <p>ISEC 2026 · DW · Parcial #2 · Programación I</p>
+    <p class="pie-extra">HTML, CSS, JavaScript.</p>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e2e;
+    color: #ededf5;
+}
+
+header {
+    background: linear-gradient(to right, #2b2d6e, #6b2f7e);
+    color: white;
+    height: 15vh;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 16px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.pie-extra {
+    font-size: 0.8rem;
+    color: #a9abc4;
+}
+
+/*  PANELES  */
+.panel {
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.5);
+    background-color: #2a2a3d;
+    border: 0.5px solid #3a3a52;
+    border-radius: 5px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.busqueda {
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+
+}
+
+.busqueda input {
+    flex: 2;
+}
+
+.busqueda label {
+    flex: 1;
+}
+
+/*  FORMULARIO  */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #a9abc4;
+}
+
+input, select {
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #1e1e2e;
+    color: #ededf5;
+    border: 0.5px solid #504f4f;
+}
+
+#mensaje-error {
+    color: #ff6b73;
+    min-height: 20px;
+}
+
+.botones-form {
+    display: flex;
+    gap: 6px;
+}
+
+/*  BOTONES  */
+button {
+    border-radius: 4px;
+    padding: 6px 10px;
+    border: none;
+    background-color: #504f4f;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #696767;
+}
+
+button:active {
+    background-color: #3e3e3e;
+}
+
+.boton-secundario {
+    background-color: #3a3a52;
+}
+
+/*  LISTA DE CONTACTOS  */
+#lista-contactos {
+    background-color: #2a2a3d;
+    border: 0.5px solid #3a3a52;
+    border-radius: 5px;
+    padding: 0 12px;
+}
+
+#sin-resultados {
+    text-align: center;
+    color: #a9abc4;
+    padding: 20px;
+}
+
+.oculto {
+    display: none;
+}
+
+.tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 0.5px solid #3a3a52;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta:last-child {
+    border-bottom: none;
+}
+
+.tarjeta:hover {
+    background-color: #33334a;
+}
+
+/* Los favoritos llevan una franja dorada a la izquierda */
+.tarjeta.favorito {
+    border-left: 4px solid #f5b82e;
+    padding-left: 10px;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    margin: 0 0 4px;
+}
+
+.info p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+    color: #a9abc4;
+}
+
+/*  AVATARES: un degradado por categoría  */
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1e1e2e;
+}
+
+.avatar.familia {
+    background: linear-gradient(to right, #ff8a65, #ff5e7e);
+}
+
+.avatar.amigos {
+    background: linear-gradient(to right, #4fd1c5, #2b9eb3);
+}
+
+.avatar.trabajo {
+    background: linear-gradient(to right, #7c8cff, #4b3fd6);
+    color: white;
+}
+
+.avatar.estudio {
+    background: linear-gradient(to right, #f6c453, #f08a4b);
+}
+
+/*  ACCIONES  */
+.acciones {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.acciones button {
+    font-size: 0.8rem;
+    background-color: #3a3a52;
+}
+
+.acciones .boton-peligro {
+    background-color: transparent;
+    color: #ff6b73;
+    border: 1px solid #ff6b73;
+}
